@@ -63,7 +63,7 @@ int main()
     printf("By clearing the %d bit of your given number, we get %d",i,n);
     printf("\ngive the number, the bit which you want to replace and the number u want to change it to, respectively\n");
     int u;
-    scanf("%d%d%d",&n,&i,&u);
+    scanf("%d%d%d",&n,&i,&u); m,,
     update_Ith_bit(n,i,u);
     printf("By updating the %d bit of your given number with %d, we get %d",i,u,n);
     printf("\ngive the number and the starting bit which you want to clear to the last, respectively\n");

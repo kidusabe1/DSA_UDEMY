@@ -1,34 +1,15 @@
-#include <iostream>
-#include <algorithm>
-
+#include<bits/stdc++.h>
 using namespace std;
-
-bool arePermutation(string A, string B)
+ 
+ 
+double power(double x, double y, double mod)
 {
-    int sum1=0,sum2=0;
-    for(int i=0;i<A.length();i++)
-    {
-        sum1+=int(A[i]);
-        sum2+=int(B[i]);
-    }
-    if(sum1==sum2)
-        return true;
-    else
-        return false;
+    double res= (pow(x,y)%mod);
+    return res;
 }
-
 
 int main()
 {
-    string A= "1234";
-    string B= "1235";
-    if(arePermutation(A,B)==true)
-    {
-        printf("True\n");
-    }
-    else{
-        printf("False\n");
-    }
-
+    cout<<power(12,25,10007);
     return 0;
 }
